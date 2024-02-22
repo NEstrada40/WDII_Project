@@ -1,2 +1,2 @@
 # WDII_Project
-ART-352,Web Design II
+ART-352, Web Design II
