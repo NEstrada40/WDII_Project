@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center mx-auto mb-md-0">
+            <!--Navbar while Expanded-->
+            <div class="container-fluid"> <!--Components of Navbar-->
+                <a class="navbar-brand" href="#">
+                    <img src="img/Vector.svg" alt="">
+                </a> <!--Navbar Logo-->
+
+                <button class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="margin-left: auto; margin-right: auto;"> <!--Navbar Toggle-->
+                    <span class="navbar-toggler-icon"></span>
+                </button> <!--Retracts and Opens Collapsed Navbar-->
+
+                <div class="collapse navbar-collapse align-items-center" id="myNav"> <!--Navbar while Expanded-->
+                    <ul class="navbar-nav mx-auto mb-md-0">
+                        <li class="nav-item"> <!--Home Nav Button-->
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><!--About Nav Button-->
+                            <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item"><!--Contact Nav Button-->
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown"><!--Projects Nav Dropdown-->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Big Project 1</a></li>
+                                <li><a class="dropdown-item" href="#">Big Project 2</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Other Projects</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="my-5">
+        <div class="mb-3" id="successMessage" style="display: none;">
+            <div class="alert alert-success" role="alert">
+                Your message has been successfully submitted!
+            </div>
+        </div>
+        <div class="container form" id="myForm">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    
+                    <h4 class="mt-4 mb-4 text-center">Questions about work experience, projects, or anything else? Feel free to reach out with a direct message.</h4>
+
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Enter your message here." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-4">
+            <h4 class="text-center">Or, find me on social media!</h4>
+        </div>
+
+        <div class="row justify-content-center"><!--Carousel-->
+            <div id="mySocialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="img/instagram.svg" class="d-block w-100 carousel-image" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="img/facebook.svg" class="d-block w-100 carousel-image" alt="Facebook">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="img/twitter.svg" class="d-block w-100 carousel-image" alt="Twitter">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="img/facebook.svg" class="d-block w-100 carousel-image" alt="Facebook">
+                        </a>
+                    </div>
+                </div>                
+                <button class="carousel-control-prev" type="button" data-bs-target="#mySocialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mySocialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+    </main>
+    <div class="container"> <!--Footer-->
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom mb-md-0">
+                <li class="nav-item"> <!--Home Nav Button-->
+                    <a class="nav-link text-muted" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item"><!--About Nav Button-->
+                    <a class="nav-link text-muted" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item"><!--Contact Nav Button-->
+                    <a class="nav-link active" style="color: black" aria-current="page" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown"><!--Projects Nav Dropdown-->
+                    <a class="nav-link dropdown-toggle text-muted" href="#" id="internalDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu" aria-labelledby="internalDropdown">
+                        <li><a class="dropdown-item" href="#">Big Project 1</a></li>
+                        <li><a class="dropdown-item" href="#">Big Project 2</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Other Projects</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="text-center text-muted">© 2024 Nathan Estrada</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
