@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center mx-auto mb-md-0">
+            <div class="container-fluid"> <!--Components of Navbar-->
+                <a class="navbar-brand" href="#">
+                    <img src="img/Vector.svg" alt="">
+                </a> <!--Navbar Logo-->
+
+                <button class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="margin-left: auto; margin-right: auto;"> <!--Navbar Toggle-->
+                    <span class="navbar-toggler-icon"></span>
+                </button> <!--Expands and Closes Collapsed Navbar-->
+
+                <div class="collapse navbar-collapse align-items-center" id="myNav">
+                    <ul class="navbar-nav mx-auto mb-md-0">
+                        <li class="nav-item"> <!--Home Nav Button-->
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><!--About Nav Button-->
+                            <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item"><!--Contact Nav Button-->
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown"><!--Projects Nav Dropdown-->
+                            <a class="nav-link dropdown-toggle active" style="color: black" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" style="color: black" href="#">Rez</a></li>
+                                <li><a class="dropdown-item" href="project2.html">No Man's Sky</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="pgallery.html">Other Projects</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="my-5">
+        <div class="container">
+            <div class="row">
+                <h4 class="mt-4 text-center">I worked for United Games Artists as Design Lead for Rez.</h4>
+                <!-- <h1 class="mt-4 mb-4 text-center mb-2">Design Lead</h> -->
+            </div>
+            <div class="row justify-content-center mt-2 mb-2"><!--Carousel -->
+                <div id="rezCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/rez3.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/rez2.jpg" class="d-block mx-auto" style="max-width: 100%; height: auto;"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/rez1.png" class="d-block mx-auto" style="max-width: 100%; height: auto;"
+                                alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#rezCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#rezCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center py-4">
+                <h2>Conceptualization and Vision</h2>
+                <ul>
+                    <li>Defined the overarching aesthetic of Rez, envisioning a digital landscape for players to traverse
+                        evolving cyberspace environments.</li>
+                    <li>Established the narrative framework, outlining the player's role in combating threats
+                        and restoring order to the system.</li>
+                </ul>
+
+                <h2>Gameplay Mechanics</h2>
+                <ul>
+                    <li>Developed a precise aiming system optimized for first-person perspective, allowing players to
+                        target enemies and obstacles with ease.</li>
+                    <li>Implemented a lock-on targeting mechanism that enabled players to lock onto multiple targets
+                        simultaneously, enhancing shooting accuracy.</li>
+                    <li>Integrated rhythm-based gameplay mechanics, where player actions such as shooting and movement
+                        synchronized with the pulsating soundtrack.</li>
+                </ul>
+
+                <h2>Level Design</h2>
+                <ul>
+                    <li>Designed levels with branching pathways to encourage exploration and replayability,
+                        accommodating different player strategies and playstyles.</li>
+                    <li>Incorporated environmental hazards and interactive elements strategically to challenge players
+                        while maintaining flow and pacing.</li>
+                    <li>Utilized dynamic level elements that reacted to player actions, such as environmental changes
+                        triggered by defeating enemies or collecting power-ups.</li>
+                </ul>
+
+                <h2>Audiovisual Integration</h2>
+                <ul>
+                    <li>Collaborated with audio designers to implement a dynamic sound system that responded to player
+                        interactions and synced seamlessly with the gameplay.</li>
+                    <li>Integrated visual effects that complemented the music and gameplay, such as synchronized
+                        animations and particle effects triggered by rhythmic cues.</li>
+                    <li>Designed immersive visual transitions between levels, leveraging lighting and shader effects to
+                        enhance the sense of progression and immersion.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div class="container"> <!--Footer-->
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom mb-md-0">
+                <li class="nav-item"> <!--Home Nav Button-->
+                    <a class="nav-link text-muted" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item"><!--About Nav Button-->
+                    <a class="nav-link text-muted" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item"><!--Contact Nav Button-->
+                    <a class="nav-link text-muted" aria-current="page" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown"><!--Projects Nav Dropdown-->
+                    <a class="nav-link dropdown-toggle active" style="color: black" href="#" id="internalDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu" aria-labelledby="internalDropdown">
+                        <li><a class="dropdown-item" style="color: black" href="#">Rez</a></li>
+                        <li><a class="dropdown-item" href="project2.html">No Man's Sky</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="pgallery.html">Other Projects</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="text-center text-muted">© 2024 Nathan Estrada</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

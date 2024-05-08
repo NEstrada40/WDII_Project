@@ -5,7 +5,7 @@ p{
     font-size: 18px;
 }
 
-h4{
+h1, h2, h4{
     font-family:'Jaldi';
 }
 
@@ -75,4 +75,14 @@ border-radius: 0.2rem;
     width: auto;
     height: 100%;
     object-fit: cover;
+}
+
+#rezCarousel.carousel {
+    height: 480px;
+    width: 720px;
+}
+
+#NMSCarousel.carousel {
+    height: 720px;
+    width: 1080px;
 }
